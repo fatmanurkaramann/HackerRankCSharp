@@ -1,0 +1,15 @@
+C:\Users\fato\Desktop\Yazılım\C#\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\bin\Debug\net6.0\HackerRankCSharp.exe
+C:\Users\fato\Desktop\Yazılım\C#\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\bin\Debug\net6.0\HackerRankCSharp.deps.json
+C:\Users\fato\Desktop\Yazılım\C#\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\bin\Debug\net6.0\HackerRankCSharp.runtimeconfig.json
+C:\Users\fato\Desktop\Yazılım\C#\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\bin\Debug\net6.0\HackerRankCSharp.dll
+C:\Users\fato\Desktop\Yazılım\C#\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\bin\Debug\net6.0\HackerRankCSharp.pdb
+C:\Users\fato\Desktop\Yazılım\C#\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\obj\Debug\net6.0\HackerRankCSharp.csproj.AssemblyReference.cache
+C:\Users\fato\Desktop\Yazılım\C#\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\obj\Debug\net6.0\HackerRankCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fato\Desktop\Yazılım\C#\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\obj\Debug\net6.0\HackerRankCSharp.AssemblyInfoInputs.cache
+C:\Users\fato\Desktop\Yazılım\C#\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\obj\Debug\net6.0\HackerRankCSharp.AssemblyInfo.cs
+C:\Users\fato\Desktop\Yazılım\C#\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\obj\Debug\net6.0\HackerRankCSharp.csproj.CoreCompileInputs.cache
+C:\Users\fato\Desktop\Yazılım\C#\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\obj\Debug\net6.0\HackerRankCSharp.dll
+C:\Users\fato\Desktop\Yazılım\C#\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\obj\Debug\net6.0\refint\HackerRankCSharp.dll
+C:\Users\fato\Desktop\Yazılım\C#\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\obj\Debug\net6.0\HackerRankCSharp.pdb
+C:\Users\fato\Desktop\Yazılım\C#\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\obj\Debug\net6.0\HackerRankCSharp.genruntimeconfig.cache
+C:\Users\fato\Desktop\Yazılım\C#\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\HackerRankCSharp\obj\Debug\net6.0\ref\HackerRankCSharp.dll
