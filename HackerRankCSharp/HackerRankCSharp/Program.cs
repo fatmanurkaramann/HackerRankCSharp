@@ -7,29 +7,32 @@
         //PrintEvenOddIndices("Hacker");
 
         //int n, p;
-        //n=int.Parse(Console.ReadLine());
+        //n = int.Parse(Console.ReadLine());
         //p = int.Parse(Console.ReadLine());
 
-        //    Calculator calculator = new Calculator();
-        //    int result = calculator.power(n, p);
-        //    Console.WriteLine(result);
+        //Calculator calculator = new Calculator();
+        //int result = calculator.power(n, p);
+        //Console.WriteLine(result);
 
-        //string date = "07:05:45PM";
 
-        //if (date.EndsWith("PM"))
-        //{
-        //    string hourString = date.Substring(0, 2); // Extract the hour part (e.g., "07")
-        //    int hour = int.Parse(hourString); // Convert the hour string to an integer
-        //    hour += 12;
-        //    string time24HourFormat = hour.ToString().PadLeft(2, '0') + date.Substring(2, 6); // Create the time string in 24-hour format
+        //string date = Console.ReadLine();
 
-        //    Console.WriteLine(time24HourFormat);
-        //}
+        //string dateResult = Result.timeConversion(date);
+        //Console.WriteLine(dateResult);
 
-        string s = Console.ReadLine();
+        int n = Convert.ToInt32(Console.ReadLine());
+        int[] intArray = new int[n];
+        for (int i = 0; i < n; i++)
+        {
+            intArray[i] = Convert.ToInt32(Console.ReadLine());
+        }
 
-        string result = Result.timeConversion(s);
-        Console.WriteLine(result);  
+        n = Convert.ToInt32(Console.ReadLine());
+        string[] stringArray = new string[n];
+        for (int i = 0; i < n; i++)
+        {
+            stringArray[i] = Console.ReadLine();
+        }
 
 
     }
@@ -82,7 +85,6 @@ public class Calculator
 }
 class Result
 {
-
     public static string timeConversion(string s)
     {
         string hourString = s.Substring(0, 2);
@@ -97,11 +99,21 @@ class Result
             hour = 0;
         }
 
-        string hour24Format = hour.ToString().PadLeft(2, '0');
-        string time24Format = hour24Format + s.Substring(2, 6);
+        string hour24Format = hour.ToString().PadLeft(2, '0'); //soldan bir tane 0 koyar
+        string time24Format = hour24Format + s.Substring(2, 6); //pm ve am yazısını yok eder
 
         return time24Format;
     }
 
+}
+class Printer
+{
+    public static void PrintArray<T>(T[] array)
+    {
+        foreach (T element in array)
+        {
+            Console.WriteLine(element);
+        }
+    }
 }
 
