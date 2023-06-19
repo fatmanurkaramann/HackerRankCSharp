@@ -36,7 +36,9 @@ internal class Program
 
         //ArrayListExercise.PrimeNumber();
 
-        Average.AverageNumbers();
+        //Average.AverageNumbers();
+
+        SesliHarf.sesliHarfBul();
 
     }
     public static void StringToInteger(string S)
@@ -261,5 +263,33 @@ public class Average
         }
 
         return sum / numbers.Count;
+    }
+}
+
+public class SesliHarf
+{
+    public static void sesliHarfBul()
+    {
+        Console.WriteLine("Bir cümle girin: ");
+        string cumle = Console.ReadLine();
+
+        char[] sesliHarfler = { 'a', 'e', 'ı', 'i', 'o', 'ö', 'u', 'ü' };
+        List<char> sesliHarfListesi = new List<char>();
+
+        foreach (char harf in cumle)
+        {
+            if (Array.IndexOf(sesliHarfler, char.ToLower(harf)) != -1 && !sesliHarfListesi.Contains(harf))
+            {
+                sesliHarfListesi.Add(harf);
+            }
+        }
+
+        sesliHarfListesi.Sort();
+
+        Console.WriteLine("Cümledeki sesli harfler:");
+        foreach (char sesliHarf in sesliHarfListesi)
+        {
+            Console.WriteLine(sesliHarf);
+        }
     }
 }
