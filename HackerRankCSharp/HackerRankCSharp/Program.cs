@@ -27,13 +27,10 @@
             intArray[i] = Convert.ToInt32(Console.ReadLine());
         }
 
-        n = Convert.ToInt32(Console.ReadLine());
-        string[] stringArray = new string[n];
-        for (int i = 0; i < n; i++)
-        {
-            stringArray[i] = Console.ReadLine();
-        }
 
+
+        Printer.PrintArray(args);
+        //DictionaryAndMaps.PhoneBook();
 
     }
     public static void StringToInteger(string S)
@@ -116,4 +113,33 @@ class Printer
         }
     }
 }
+class DictionaryAndMaps
+{
+    public static void PhoneBook()
+    {
+        int n = int.Parse(Console.ReadLine());
+        Dictionary<string, string> phoneBook = new Dictionary<string, string>();
 
+        for (int i = 0; i < n; i++)
+        {
+            string[] entry;
+            entry = Console.ReadLine().Split(' ');
+            string name = entry[0];
+            string phoneNumber = entry[1];
+            phoneBook[name] = phoneNumber;
+        }
+        string query;
+        while ((query = Console.ReadLine()) != null)
+        {
+            if (phoneBook.ContainsKey(query))
+            {
+                Console.WriteLine(query + "=" + phoneBook[query]);
+            }
+            else
+            {
+                Console.WriteLine("Not found");
+            }
+        }
+
+    }
+}
