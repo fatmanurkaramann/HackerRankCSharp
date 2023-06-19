@@ -1,4 +1,6 @@
-﻿internal class Program
+﻿using System;
+using System.Collections;
+internal class Program
 {
     public static void Main(string[] args)
     {
@@ -20,17 +22,19 @@
         //string dateResult = Result.timeConversion(date);
         //Console.WriteLine(dateResult);
 
-        int n = Convert.ToInt32(Console.ReadLine());
-        int[] intArray = new int[n];
-        for (int i = 0; i < n; i++)
-        {
-            intArray[i] = Convert.ToInt32(Console.ReadLine());
-        }
+        //int n = Convert.ToInt32(Console.ReadLine());
+        //int[] intArray = new int[n];
+        //for (int i = 0; i < n; i++)
+        //{
+        //    intArray[i] = Convert.ToInt32(Console.ReadLine());
+        //}
+        //Printer.PrintArray(args);
 
 
 
-        Printer.PrintArray(args);
         //DictionaryAndMaps.PhoneBook();
+
+        ArrayListExercise.PrimeNumber();
 
     }
     public static void StringToInteger(string S)
@@ -141,5 +145,80 @@ class DictionaryAndMaps
             }
         }
 
+    }
+}
+public class ArrayListExercise
+{
+    public static void PrimeNumber()
+    {
+        
+        ArrayList primeNumbers = new ArrayList();
+        ArrayList notPrimeNumbers = new ArrayList();
+
+        int sayac = 1;
+        while (sayac <= 5)
+        {
+            Console.Write("{0}. sayıyı girin: ", sayac);
+            int sayi = int.Parse(Console.ReadLine());
+            if (sayi > 0)
+            {
+                if (IsPrime(sayi))
+                    primeNumbers.Add(sayi);
+                else
+                    notPrimeNumbers.Add(sayi);
+
+                sayac++;
+            }
+            else
+            {
+                Console.WriteLine("Geçersiz giriş! Pozitif bir sayı girin.");
+            }
+        }
+
+        primeNumbers.Sort();
+        notPrimeNumbers.Sort();
+        primeNumbers.Reverse();
+        notPrimeNumbers.Reverse();
+
+        Console.WriteLine("Asal sayılar:");
+        foreach (int sayi in primeNumbers)
+        {
+            Console.WriteLine(sayi);
+        }
+
+        Console.WriteLine("Asal olmayan sayılar:");
+        foreach (int sayi in notPrimeNumbers)
+        {
+            Console.WriteLine(sayi);
+        }
+
+        Console.WriteLine("Asal sayıların eleman sayısı: {0}", primeNumbers.Count);
+        Console.WriteLine("Asal olmayan sayıların eleman sayısı: {0}", notPrimeNumbers.Count);
+
+        double asalOrtalama = primeNumbers.Count > 0 ? primeNumbers.Cast<int>().Average() : 0;
+        double asalOlmayanOrtalama = notPrimeNumbers.Count > 0 ? notPrimeNumbers.Cast<int>().Average() : 0;
+
+        Console.WriteLine("Asal sayıların ortalaması: {0}", asalOrtalama);
+        Console.WriteLine("Asal olmayan sayıların ortalaması: {0}", asalOlmayanOrtalama);
+
+        Console.ReadLine();
+    }
+
+    public static bool IsPrime(int number)
+    {
+        if (number < 2)
+        {
+            return false;
+        }
+
+        for (int i = 2; i * i <= number; i++)
+        {
+            if (number % i == 0)
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
