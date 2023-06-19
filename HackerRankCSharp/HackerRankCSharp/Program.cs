@@ -34,7 +34,9 @@ internal class Program
 
         //DictionaryAndMaps.PhoneBook();
 
-        ArrayListExercise.PrimeNumber();
+        //ArrayListExercise.PrimeNumber();
+
+        Average.AverageNumbers();
 
     }
     public static void StringToInteger(string S)
@@ -220,5 +222,44 @@ public class ArrayListExercise
         }
 
         return true;
+    }
+}
+public class Average
+{
+    public static void AverageNumbers()
+    {
+        ArrayList numbers = new ArrayList();
+        int sayac = 1;
+        while (sayac<=5)
+        {
+            Console.Write("{0}. sayıyı girin: ", sayac);
+            int sayi = int.Parse(Console.ReadLine());
+            numbers.Add(sayi);
+            sayac++;
+        }
+        numbers.Sort();
+        ArrayList smallestThree = new ArrayList(numbers.GetRange(0, 3));
+        ArrayList largestThree =new ArrayList(numbers.GetRange(numbers.Count - 3, 3));
+
+        double smallestAverage = CalculateAverage(smallestThree);
+        double largestAverage = CalculateAverage(largestThree);
+        double totalAverage = CalculateAverage(numbers);
+
+        Console.WriteLine("En küçük 3 sayı: {0}", string.Join(", ", smallestThree.ToArray()));
+        Console.WriteLine("En büyük 3 sayı: {0}", string.Join(", ", largestThree.ToArray()));
+        Console.WriteLine("En küçük 3 sayının ortalaması: {0}", smallestAverage);
+        Console.WriteLine("En büyük 3 sayının ortalaması: {0}", largestAverage);
+        Console.WriteLine("Tüm sayıların ortalaması: {0}", totalAverage);
+    }
+    static double CalculateAverage(ArrayList numbers)
+    {
+        double sum = 0;
+
+        foreach (int number in numbers)
+        {
+            sum += number;
+        }
+
+        return sum / numbers.Count;
     }
 }
