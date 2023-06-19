@@ -62,7 +62,7 @@ internal class Program
         Console.WriteLine(kullanıcılar[10]);
         foreach (var item in kullanıcılar)
         {
-            Console.WriteLine(item);
+            Console.WriteLine(item.Value);
         }
 
         //count

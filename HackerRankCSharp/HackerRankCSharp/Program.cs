@@ -265,7 +265,6 @@ public class Average
         return sum / numbers.Count;
     }
 }
-
 public class SesliHarf
 {
     public static void sesliHarfBul()
