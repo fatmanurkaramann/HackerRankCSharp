@@ -46,7 +46,6 @@ internal class Program
             int age = int.Parse(Console.In.ReadLine());
             Person p = new Person(age);
             p.amIOld();
-         
             Console.WriteLine();
         }
 
